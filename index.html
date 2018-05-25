@@ -1,0 +1,59 @@
+<!DOCKTYPE html>
+<html>
+<!---->
+  <head>
+    <title>My First Calculator</title>
+  </head>
+
+  <body>
+  <div></div>
+    <div id="calculator">
+      <!--Beginning of calculator-->
+      <h2>My First Calculator</h2>
+      <input id='displayCalc' type="text" placeholder="0">
+
+      <!--Beginning of section1/line1-->
+      <div id='section1'>
+        <button id='clearErase' onclick="clearEraseMem();">CE</button>
+        <button id='clear' onclick="clearChar();">C</button>
+        <button id='squareRoot' onclick="Math.SQRT">;">SQRT</button>
+        <button id='percentage' onclick="percentage();">%</button>
+      </div>
+      <!--End of section1/line1-->
+      <!--Beginning of section2/line2-->
+      <div id="section2">
+        <button id='calcButton' onclick=displayCalc.value+="7">7</button>
+        <button id='calcButton' onclick=displayCalc.value+="8">8</button>
+        <button id='calcButton' onclick=displayCalc.value+="9">9</button>
+        <button id='division' onclick=displayCalc.value+="/">/</button>
+      </div>
+      <!--End of section2/line2-->
+      <!--Beginning of section3/line3-->
+      <div id="section3">
+        <button id='calcButton' onclick=displayCalc.value+="4">4</button>
+        <button id='calcButton' onclick=displayCalc.value+="5">5</button>
+        <button id='calcButton' onclick=displayCalc.value+="6">6</button>
+        <button id='multiplication' onclick=displayCalc.value+="*">*</button>
+      </div>
+      <!--End of section3/line3-->
+      <!--Beginning of section4/line4-->
+      <div id="section4">
+        <button id='calcButton' onclick=displayCalc.value+="1">1</button>
+        <button id='calcButton' onclick=displayCalc.value+="2">2</button>
+        <button id='calcButton' onclick=displayCalc.value+="3">3</button>
+        <button id='subtraction' onclick=displayCalc.value+="-">-</button>
+      </div>
+      <!--End of section4/line4-->
+      <!--Beginning of section5/line5-->
+      <div id="section5">
+        <button id='calcButton' onclick=displayCalc.value+="0"></button>
+        <button id='decimal' onclick=displayCalc.value+=".">.</button>
+        <button id='addition' onclick=displayCalc.value+="+">+</button>
+        <button id='sum' onclick=displayCalc.value=eval(displayCalc.value)>=</button>
+      </div>
+        <!--End of section5/line5-->
+        <!--End of calculator-->
+      </input> <!--End of displayCalc-->
+  </body>
+
+</html>
